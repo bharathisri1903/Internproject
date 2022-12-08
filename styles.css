@@ -1,80 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
-.container{
-  height: 100vh;
-  width: 90%;
-  background-image: url(images/background.png);
-  background-position: center;
-  background-size: cover;
-  padding-left: 5%;
-  padding-right: 5%;
-
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
-.navbar{
-  width: 100%;
-  height: 15vh;
-  margin: auto;
-  display: flex;
-  align-items: center;
+#navbar{
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    padding: .5rem 5rem;
+    box-shadow: 5px 5px 20px rgba(0,0,0,.5);
+    background: black;
 }
-.logo{
-  width: 160px;
-  cursor: pointer;
+.navbar .navbar-brand{
+    font-size: 25px;
+    font-weight: 800;
+    color:darkviolet;
 }
-.cart{
-  width: 60px;
-  cursor: pointer;
-  padding-right: 70px;
+#navbarSupportedContent a{
+    color: #fff;
+    border-bottom: 2px solid transparent;
 }
-nav{
-  flex: 1;
-  padding-left: 60px;
+#navbarSupportedContent a:hover{
+    border-bottom: 2px solid darkviolet;
 }
-nav ul li{
-  display: inline-block;
-  list-style: none;
-  margin: 0px 20px;
+#navbarSupportedContent button{
+    background: darkviolet;
+    width: 5rem;
+    border-radius: 15px;
 }
-nav ul li a{
-  text-decoration: none;
-  color: #333;
-  font-size: 25px;
+section{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.content h1{
-   font-size: 60px;
-   font-weight: 100;
-   margin-top: 24px;
-   margin-bottom: 15px;
-   color: #232d60;
+#home{
+    background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.4)), url("E:/Responsive/images/bg.jfif");
+    background-size: cover;
+    background-position: center;
+    flex-direction: column;
 }
-.content p{
-   font-size: 20px;
-   color: #6a7199;
+#home h1{
+    font-size: 100px;
+    color: white;
+    letter-spacing: 3px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-shadow: 0px 1px 0px #ccc,
+    0px 2px 0px #ccc,
+    0px 3px 0px #ccc,
+    0px 4px 0px #ccc,
+    0px 5px 0px #ccc,
+    0px 6px 0px #ccc,
+    0px 7px 0px #ccc;
 }
-.content{
-  margin-left: 10%;
-  margin-top: 10%;
+#home p{
+    font-size: 18px;
+    color:white;
 }
-.content .btn{
-  display: inline-block;
-  background: linear-gradient(45deg,#87adfe,#ff77cd);
-  border-radius: 6px;
-  padding:10px 20px;
-  box-sizing: border-box;
-  text-decoration:none;
-  color: #fff;
-  box-shadow: 3px 8px 22px rgba(94,28,68,0.15);
+#home .input-group{
+    width: 40%;
+    height:45px;
 }
-.arrow-icons{
-  margin-top: 40px;
-  display: flex;
+.signin{
+    background: darkviolet !important;
+    color: white !important;
+    box-shadow: 2px 4px 5px rgba(0,0,0,.3);
 }
-.arrow-icons img{
-  width: 40px;
-  margin-right: 25px;
+#about{
+    background : linear-gradient(to right,#0b5cc0,#c828986d 100%)
 }
-.feature-img{
-  height: 90%;
-  position: absolute;
-  bottom: 0;
-  right: 160px;
+#about h1{
+    font-weight: 800;
+    font-size: 50px;
+    color:black;
+}
+#about p{
+    color: white;
+}
+#product{
+    background: #e5e5e5;
+}
+#product h1{
+    font-size: 50px;
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+#product img{
+    width: 200px;
+    height: 200px;
+}
+.card{
+    width: 250px;
+    height: 300px;
+    background: #e5e5e5 !important;
+    border:none !important;
+    box-shadow: 15px 20px 20px rgba(0,0,0,0.3),
+    inset 4px 4px 10px white;
+    border-radius: 20px;
+    overflow: hidden;
+    align-items: center;
+    margin: 20px 60px;
+    transition: .2s;
+}
+.card:hover{
+    box-shadow: inset 5px 5px 10px rgba(0,0,0,.3),
+                    inset -4px -4px 10px white;
+    transition: .2s;
+}
+.fluid{
+    width: 500px;
+    height: 350px;
+}
+#contact img{
+    height: 100%;
+}
+.box{
+    width: 80% !important;
+    margin-top: 10px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+}
+#contact input{
+    margin: 10px 0px;
+}
+#contact textarea{
+    margin: 10px 0px;
+}
+footer{
+    width: 100%;
+    height: 30px;
+    background: rgba(0,0,0,.8);
+    margin-top: -30px;
+    text-align: center;
+    color: white;
+    padding: 3px;
 }
